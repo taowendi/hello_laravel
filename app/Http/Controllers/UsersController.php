@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\User;
+use Auth;
 
 class UsersController extends Controller
 {
@@ -30,5 +31,15 @@ class UsersController extends Controller
         ]);
         session()->flash('success','欢迎，您将在这里开启一段新的旅程');
         return redirect()->route('users.show',[$user]);
+    }
+
+    /**
+     * @Notes:编辑用户
+     * @param User $user
+     * @author:taowendi
+     * @Time:2018-11-07 15:44
+     */
+    public function edit(User $user){
+        return view('users.edit',compact('user'));
     }
 }
