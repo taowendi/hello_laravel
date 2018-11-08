@@ -56,6 +56,7 @@ class UsersController extends Controller
     }
 
     /**
+<<<<<<< HEAD
      * @Notes:修改用户
      * @param User $user
      * @author:taowendi
@@ -87,4 +88,5 @@ class UsersController extends Controller
         session()->flash('success','成功删除用户');
         return back();
     }
+
 }
