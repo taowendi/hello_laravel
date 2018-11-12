@@ -4,17 +4,7 @@
             <a href="/" id="logo">Sample App</a>
             <nav>
                 <ul class="nav navbar-nav navbar-right">
-<<<<<<< HEAD
-                    @if(Auth::check())
-                        <li><a href="{{route('users.index')}}">用户列表</a></li>
-                        <li class="dropdown">
-                            <a href="#" clas="dropdown-toggle" data-toggle="dropdown">
-                                {{Auth::user()->name}}<b class="caret"></b>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a href="{{ route('users.show', Auth::user()->id) }}">个人中心</a></li>
-                                <li><a href="{{route('users.edit',Auth::user()->id)}}">编辑资料</a></li>
-=======
+
                     @if (Auth::check())
                         <li><a href="#">用户列表</a></li>
                         <li class="dropdown">
@@ -24,7 +14,6 @@
                             <ul class="dropdown-menu">
                                 <li><a href="{{ route('users.show', Auth::user()->id) }}">个人中心</a></li>
                                 <li><a href="{{ route('users.edit', Auth::user()->id) }}">编辑资料</a></li>
->>>>>>> user-crud
                                 <li class="divider"></li>
                                 <li>
                                     <a id="logout" href="#">
@@ -38,15 +27,10 @@
                             </ul>
                         </li>
                     @else
-<<<<<<< HEAD
                     <li><a href="{{ route('help') }}">帮助</a></li>
                     <li><a href="{{route('login')}}">登录</a></li>
                         @endif
-=======
-                        <li><a href="{{ route('help') }}">帮助</a></li>
-                        <li><a href="{{ route('login') }}">登录</a></li>
-                    @endif
->>>>>>> user-crud
+
                 </ul>
             </nav>
         </div>

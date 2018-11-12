@@ -1,9 +1,6 @@
 @extends('layouts.default')
-<<<<<<< HEAD
 @section('title','登录')
-=======
-@section('title', '登录')
->>>>>>> user-crud
+
 
 @section('content')
     <div class="col-md-offset-2 col-md-8">
@@ -26,17 +23,12 @@
                         <label for="password">密码：</label>
                         <input type="password" name="password" class="form-control" value="{{ old('password') }}">
                     </div>
-<<<<<<< HEAD
-                    <div class="checkbox">
-                        <label><input type="checkbox" name="remember"> 记住我</label>
-                    </div>
-=======
+
 
                     <div class="checkbox">
                         <label><input type="checkbox" name="remember"> 记住我</label>
                     </div>
 
->>>>>>> user-crud
                     <button type="submit" class="btn btn-primary">登录</button>
                 </form>
 
