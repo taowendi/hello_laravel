@@ -3,6 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Http\Requests;
+use App\Models\Status;
+use Auth;
 
 class StatusesController extends Controller
 {
@@ -16,7 +19,7 @@ class StatusesController extends Controller
             'content'=>'required|max:140'
         ]);
 
-        Auth:user()->statuses()->create([
+        Auth::user()->statuses()->create([
             'content'=>$request['content']
         ]);
 
